@@ -30,6 +30,10 @@ ports:
     onOpen: ignore
     visibility: public
     name: Node Server for Vite
+  - port: 80
+    onOpen: ignore
+    visibility: public
+    name: Laravel!!
 
 # Configure vscode
 vscode:

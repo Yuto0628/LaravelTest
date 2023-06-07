@@ -6,7 +6,7 @@ This is a [Laravel with MySQL](https://laravel.com) template configured for ephe
 
 Click the button below to start a new development environment:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/template-php-laravel-mysql)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://github.com/Issei0804-ie/template-php-laravel-mysql)
 
 ## Get Started With Your Own Project
 
