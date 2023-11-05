@@ -19,6 +19,15 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        DB::listen(static function (QueryExecuted $event) {
+            $sql = $event->connection
+                ->getQueryGrammar()
+                ->substituteBindingsIntoRawSql(
+                    sql: $event->sql,
+                    bindings: $event->connection->prepareBindings($event->bindings),
+                );
+
+            Log::debug(sprintf('%.2f ms, SQL: %s;', $event->time, $sql));
+        });
     }
 }
